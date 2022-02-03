@@ -1,0 +1,61 @@
+html,
+body {
+  height: 100%;
+  
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #EBF0F5;
+}
+
+h1 {
+  font-family: "Nunito Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  margin: auto;
+  background-color: rgb(255, 244, 196);
+  border-radius: 5%;
+  box-shadow: 0 2px 3px #C8D0D8;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.top {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.middle {
+  border-radius: 0;
+  margin-bottom: -1px;
+}
+
+.bottom {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
