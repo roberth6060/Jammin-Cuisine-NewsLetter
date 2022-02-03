@@ -11,7 +11,7 @@
  * Next, push local version of app to heroku with: git push heroku master
  * live site https://safe-mountain-58301.herokuapp.com
  */
-
+ 
 //jshint esversion: 6
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -67,9 +67,9 @@ app.post("/", function (req, res) {
     //Make request (Create callback function that will give response from the mailchimp server):
     const request = https.request(url, options, function (response) {
         //Check for success (status code ===200) or failure:
-        if (response.statusCode === 200) { 
+        if (response.statusCode === 200) {
             res.sendFile(__dirname + "/success.html");
-        }else {
+        } else {
             res.sendFile(__dirname + "/failure.html");
         }
         //Check what data is sent: 
@@ -83,17 +83,12 @@ app.post("/", function (req, res) {
     //Use this to specifyu you're done with the request:
     request.end();
 
-    //Use mailchimp API:
-    // client.setConfig({
-    //     apiKey: "425b195f7a8d24c1ae651b5c44dfc7d8-us20",
-    //     server: "us20",
-    // });
 });
 
 //post request for failure route. Will have completion handler that redirects user to home route:
-app.post("/failure", function(req , res) {
+app.post("/failure", function (req, res) {
 
-   res.redirect("/")
+    res.redirect("/")
 
 });
 
@@ -101,10 +96,3 @@ app.post("/failure", function(req , res) {
 app.listen(process.env.PORT || 3000, function () {
     console.log("Sever is running on port 3000.");
 });
-
-//usernamr: roberth60
-// API key
-//425b195f7a8d24c1ae651b5c44dfc7d8-us20
-
-// List id
-// 7bdb3c7b55
