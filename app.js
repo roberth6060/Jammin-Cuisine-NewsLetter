@@ -8,7 +8,7 @@
  * in Procfile: (Type) web: node app.js to tell heroku how to launch file
  * Next, Save work to git (git init) -->See Notes Boox
  * Deploy the app (heroku create)
- * Next, push local version of app to heroku with: git push heroku master
+ * Next, push local version of app to heroku with: npm i - g heroku
  * live site https://safe-mountain-58301.herokuapp.com
  */
  
@@ -88,8 +88,7 @@ app.post("/", function (req, res) {
 //post request for failure route. Will have completion handler that redirects user to home route:
 app.post("/failure", function (req, res) {
 
-    res.redirect("/")
-
+    res.redirect("/");
 });
 
 // Use process.env.PORT(Dynamic PORT) so that heroku chooses port to run web application:
