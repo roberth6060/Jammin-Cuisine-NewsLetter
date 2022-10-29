@@ -95,6 +95,7 @@ app.post("/failure", function (req, res) {
 });
 
 // Use process.env.PORT(Dynamic PORT) so that heroku chooses port to run web application:
-app.listen(process.env.PORT || 3002, function () {
-  console.log("Sever is running on port 3000.");
+const port = "8000";
+app.listen(process.env.PORT || `${port}`, function () {
+  console.log(`Sever is running on port ${port}.`);
 });
