@@ -4,6 +4,7 @@
   "description": "Email collection web application",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Robert Haye",
@@ -12,6 +13,7 @@
     "@mailchimp/mailchimp_marketing": "^3.0.74",
     "body-parser": "^1.19.1",
     "express": "^4.17.2",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "nodemon": "^2.0.20"
   }
 }
